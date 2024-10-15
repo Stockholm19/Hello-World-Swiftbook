@@ -22,15 +22,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioW-CT-h9n">
+                                <rect key="frame" x="79" y="633" width="294" height="54"/>
+                                <color key="backgroundColor" red="0.84258943799999997" green="0.28243716108390998" blue="0.22103878734318544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="otw-TW-0t6"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="16" minY="160" maxX="160" maxY="160"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Показать привествие">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="greetingButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zS-nO-6n0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXC-Br-wdD" secondAttribute="trailing" constant="16" id="9QB-pZ-4vy"/>
+                            <constraint firstItem="ioW-CT-h9n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bJR-ET-wKb"/>
                             <constraint firstItem="JXC-Br-wdD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eXk-2N-ckd"/>
                             <constraint firstItem="JXC-Br-wdD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gu0-tM-moP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ioW-CT-h9n" secondAttribute="bottom" multiplier="4:3" id="qB4-hb-jAT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="ioW-CT-h9n" id="Li1-NF-9Sn"/>
+                        <outlet property="greetingLabel" destination="JXC-Br-wdD" id="GF4-BQ-geK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
